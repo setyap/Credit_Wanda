@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.creditwahana">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/cr_wanda"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/cr_wanda"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Design.NoActionBar"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Activity.Leasing.LeasingReadActivity" />
+        <activity android:name=".Activity.Leasing.LeasingMainActivity" />
+        <activity android:name=".Activity.Leader.LeaderReadActivity" />
+        <activity android:name=".Activity.Leader.LeaderMainActivity" />
+        <activity android:name=".Activity.Sales.SalesReadActivity" />
+        <activity android:name=".Activity.Sales.SalesTambahActivity" />
+        <activity android:name=".Activity.Sales.SalesMainActivity" />
+        <activity android:name=".Activity.LoginActivity"/>
+        <activity android:name=".Activity.UbahActivity"/>
+        <activity android:name=".Activity.TambahActivity"/>
+        <activity android:name=".Activity.MainActivity"/>
+    </application>
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+</manifest>

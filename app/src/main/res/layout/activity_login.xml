@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.LoginActivity"
+    android:background="@drawable/login_bg">
+
+    <RelativeLayout
+        android:layout_width="398dp"
+        android:layout_height="419dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:orientation="vertical"
+        android:background="@drawable/form_login">
+
+        <LinearLayout
+            android:layout_width="340dp"
+            android:layout_height="218dp"
+            android:layout_marginTop="200dp"
+            android:layout_centerHorizontal="true"
+            android:orientation="vertical">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="#80000000"
+                android:backgroundTint="@color/black"
+                android:textColor="@color/black"
+                android:layout_marginTop="20dp">
+
+                <EditText
+                    android:id="@+id/etUsername"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Username"
+                    android:textSize="18dp"
+                    android:inputType="text"
+                    android:textColorHint="@color/black"
+                    android:backgroundTint="@color/black"
+                    android:textColor="@color/black"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="#80000000"
+                android:backgroundTint="@color/black"
+                android:textColor="@color/black"
+                android:layout_marginTop="10dp"
+                app:passwordToggleEnabled="true"
+                app:passwordToggleTint="@color/black">
+
+                <EditText
+                    android:id="@+id/etPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Password"
+                    android:textSize="18dp"
+                    android:inputType="textPassword"
+                    android:textColorHint="@color/black"
+                    android:backgroundTint="@color/black"
+                    android:textColor="@color/black"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end|bottom"
+                android:layout_margin="8dp"
+                android:text="LOGIN"
+                android:textColor="@android:color/white"
+                android:textSize="20dp"
+                android:theme="@style/Theme.MaterialComponents.Light"
+                app:backgroundTint="#C80000"
+                app:cornerRadius="50dp" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/wms_1"
+        android:layout_width="84dp"
+        android:layout_height="28dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/wms"
+        />
+</RelativeLayout>
