@@ -152,6 +152,8 @@ public class MainActivity extends AppCompatActivity {
                 stat_kredit
         );
 
+        //oke
+
         tampildata.enqueue(new Callback<ResponeModel>() {
             @Override
             public void onResponse(Call<ResponeModel> call, Response<ResponeModel> response) {
